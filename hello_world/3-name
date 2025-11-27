@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE | chmod 755 cisfun
+gcc -o cisfun $CFILE
