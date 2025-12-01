@@ -5,6 +5,7 @@
 /**
  * main - Prints if last digit of the number is less or more than 5
  * Return: 0 if successful
+ */
 int main(void)
 {
 	int n;
