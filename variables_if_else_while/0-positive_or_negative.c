@@ -4,7 +4,7 @@
 /**
  * main - Prints n is positive or negative
  *
- * Return: 0 if successful
+ * 
  */
 int main(void)
 {
@@ -18,4 +18,5 @@ int main(void)
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
+	return (0);
 }
