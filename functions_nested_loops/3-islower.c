@@ -4,6 +4,8 @@
 
 /**
  * _islower - returs if c is lowercase
+ * Return: 1 if c is  lowercase
+ * @c: parameter
  */
 int _islower(int c)
 {
