@@ -4,7 +4,7 @@
 * main - entry point
 * Return: 0 if successful
 */
-int main
+int main(void)
 {
 	char letter;
 
