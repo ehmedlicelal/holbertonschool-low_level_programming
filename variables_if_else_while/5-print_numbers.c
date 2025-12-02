@@ -2,7 +2,6 @@
 
 /**
  * main - prints numbers
- *
  * Return: 0 if successful
  */
 int main(void)
