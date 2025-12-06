@@ -1,34 +1,39 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - prints to 98
- * Return: emptu output
+ * print_to_98 - print numbers to 98
+ * Return: all numbers to 98
  * @n: parameter
  */
 
 void print_to_98(int n)
 {
-	if (n < 98)
+	if (n >= 98)
 	{
-		for (; n < 98; n++)
+		if (n > 98)
 		{
-			printf("%d, ", n);
-			printf("%d", 98);
+			for (; n > 98; n--)
+			{
+				printf("%d, ", n);
+			}
 		}
-		_putchar('\n');
-	}
-	else if (n > 98)
-	{
-		for (; n > 98; n--)
+		if (n == 98)
 		{
-			printf("%d, ", n);
-			printf("%d", 98);
+			printf("%d\n", n);
 		}
-		_putchar('\n');
 	}
-	else
+	if (n < 97)
 	{
-		printf("%d", 98);
-	 	_putchar('\n');
+		if (n < 98)
+		{
+			for (; n < 98; n++)
+			{
+				printf("%d, ", n);
+			}
+		}
+		if (n == 98)
+		{
+			printf("%d\n", n);
+		}
 	}
 }
