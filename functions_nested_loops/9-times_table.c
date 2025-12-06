@@ -19,6 +19,8 @@ void times_table(void)
 					d = e % 10;
 					if (e > 9)
 					{
+						_putchar(',');
+						_putchar(' ');
 						_putchar(c + '0');
 						_putchar(d + '0');
 					}
@@ -31,11 +33,6 @@ void times_table(void)
 							_putchar(' ');
 						}
 						_putchar(e + '0');
-					}
-					if (b != 9)
-					{
-						_putchar(',');
-						_putchar(' ');
 					}
 				}
 		_putchar('\n');
