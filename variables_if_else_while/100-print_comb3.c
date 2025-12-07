@@ -1,4 +1,9 @@
-#include <main.h>
+#include <stdio.h>
+
+/**
+ * main - print all combination of two digits
+ * Return: 0 if successful
+ */
 
 int main(void)
 {
@@ -25,4 +30,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
