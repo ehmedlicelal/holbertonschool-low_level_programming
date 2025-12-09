@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_array
+ * print_array - entry point
  * @a: parameter
  * @n: parameter
  */
