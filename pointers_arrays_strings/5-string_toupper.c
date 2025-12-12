@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * string_toupper - Make string all uppercase
+ * string_toupper - make string all uppercase
  * @s: parameter
- * Retur: returns string s
+ * Return: returns string s
  */
 
 char *string_toupper(char *s)
