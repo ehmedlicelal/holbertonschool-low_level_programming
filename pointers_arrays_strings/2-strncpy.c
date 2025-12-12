@@ -4,7 +4,6 @@
  * _strncpy - copies string from src to dest
  * @dest: destination string
  * @src: source string
- * 
  * Return: returns dest
  */
 
