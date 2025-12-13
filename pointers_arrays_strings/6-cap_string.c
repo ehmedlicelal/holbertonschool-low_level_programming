@@ -12,7 +12,7 @@ char *cap_string(char *s)
 
 	while (s[i] != '\0')
 	{
-		while (!(s[i] >= 'a' && s[i] <= 'z'))
+		while (s[i] != '\0' && !(s[i] >= 'a' && s[i] <= 'z'))
 			i++;
 		if (i == 0 ||
 			s[i - 1] == ' ' || s[i - 1] == '\t' ||
