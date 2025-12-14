@@ -3,7 +3,7 @@
 /**
  * _memcpy - copies memory adress of src to dest
  * @dest: destination string
- * @srf: source string
+ * @src: source string
  * @n: number
  * Return: returns pointer to dest
  */
