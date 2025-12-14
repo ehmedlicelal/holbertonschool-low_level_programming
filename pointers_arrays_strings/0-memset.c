@@ -5,6 +5,7 @@
  * @s: array
  * @b: effectively making every char b
  * @n: size of arra(in bytes)
+ * Return: returns s
  */
 
 char *_memset(char *s, char b, unsigned int n)
