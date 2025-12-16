@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * _pow_recursion - pow function
+ * @x: parameter
+ * @y: parameter
+ * Return: -1 if y<0; 1 if y==0; else x**y
+ */
+
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
