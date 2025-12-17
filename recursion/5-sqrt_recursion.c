@@ -1,22 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - square root of n
- * @n: parameter
- * Return: 0 if successful
- */
-
-int _sqrt_recursion(int n)
-{
-	int i = 1;
-
-	if (n <= 0)
-		return (-1);
-	else
-		return (helper(n, i));
-}
-
-/**
  * helper- helper function of _sqrt_recursion
  * @n: number
  * @i: multiplier
@@ -33,4 +17,20 @@ int helper(int n, int i)
 			return helper(n, i + 1);
 	}
 	return (-1);
+}
+
+/**
+ * _sqrt_recursion - square root of n
+ * @n: parameter
+ * Return: 0 if successful
+ */
+
+int _sqrt_recursion(int n)
+{
+	int i = 1;
+
+	if (n <= 0)
+		return (-1);
+	else
+		return (helper(n, i));
 }
