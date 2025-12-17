@@ -29,7 +29,7 @@ int palindrome_checker(char *s, int start, int end)
 	{
 		return(0);
 	}
-	return (check_palindrome(s, start + 1, end - 1));
+	return (palindrome_checker(s, start + 1, end - 1));
 }
 
 /**
