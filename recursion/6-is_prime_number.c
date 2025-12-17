@@ -6,7 +6,7 @@ int find_count_of_multipliers(int n, int count, int i)
 		return (0);
 	else
 	{
-		if (n % i == 0)
+		if ((n % i == 0) && (i <= n))
 			count += 1;
 		return (find_count_of_multipliers(n, count, i + 1));
 	}
