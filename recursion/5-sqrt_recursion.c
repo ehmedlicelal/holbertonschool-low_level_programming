@@ -8,13 +8,18 @@
 
 int _sqrt_recursion(int n)
 {
-	helper(n, 1);
+	int i = 1;
+
+	if (n <= 0)
+		return (-1);
+	else
+		return (helper(n, i));
 }
 
 /**
  * helper- helper function of _sqrt_recursion
- * @n: parameter
- * @i: parameter
+ * @n: number
+ * @i: multiplier
  * Return: i if i is square root of n, -1 if not succecful
  */
 
