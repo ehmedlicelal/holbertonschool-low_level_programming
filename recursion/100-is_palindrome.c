@@ -25,10 +25,11 @@ int palindrome_checker(char *s, int start, int end)
 {
 	if(start > end)
 		return (1);
-	if (s[start] == s[end])
+	if (s[start] != s[end])
 	{
-		return (palindrome_checker(s, start + 1, end - 1));
+		return(0);
 	}
+	return (check_palindrome(s, start + 1, end - 1));
 }
 
 /**
