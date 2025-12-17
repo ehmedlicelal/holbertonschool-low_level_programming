@@ -23,11 +23,11 @@ int str_len(char *s)
 
 int palindrome_checker(char *s, int start, int end)
 {
-	if(start > end)
+	if (start > end)
 		return (1);
 	if (s[start] != s[end])
 	{
-		return(0);
+		return (0);
 	}
 	return (palindrome_checker(s, start + 1, end - 1));
 }
