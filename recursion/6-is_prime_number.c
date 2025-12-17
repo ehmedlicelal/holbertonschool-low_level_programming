@@ -17,7 +17,7 @@ int is_prime_number(int n)
 {
 	int count = 0;
 	int multiplier = 1;
-	if (n <= 3)
+	if ((n <= 3) && (n != 1))
 		return (1);
 	else
 		return (find_count_of_multipliers(n, count, multiplier));
