@@ -1,24 +1,30 @@
 #include "main.h"
 
-int find_count_of_multipliers(int n, int count, int i)
+/**
+ * is_prime_helper - helper function of is_prime_numner
+ * @n: parameter
+ * @i: parameter
+ * Return: 1 if number is prime, 0 if it is not
+ */
+
+int is_prime_helper(int n, int i)
 {
-	if (count > 2)
+	if (i * i > n)
+		return (1);
+	if (n % i == 0)
 		return (0);
-	else
-	{
-		if ((n % i == 0) && (i <= n))
-			count++;
-		return (find_count_of_multipliers(n, count, i++));
-	}
-	return (1);
+	return (is_prime_helper(n, i + 1));
 }
+
+/**
+ * is_prime_number - return if number is prime or not
+ * @n: parameter
+ * Return: 1 if number is prime, 0 if it is not
+ */
 
 int is_prime_number(int n)
 {
-	int count = 0;
-	int multiplier = 1;
-	if ((n <= 3) && (n != 1))
-		return (1);
-	else
-		return (find_count_of_multipliers(n, count, multiplier));
+	if (n <= 1)
+		return (0);
+	return (is_prime_helper(n, 2));
 }
