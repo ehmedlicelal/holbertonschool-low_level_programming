@@ -22,7 +22,7 @@ int helper(int n, int i)
 {
 	if (i <= n)
 	{
-		if ((n / i = i) && (n % i == 0))
+		if ((n / i == i) && (n % i == 0))
 			return (i);
 		else
 			return helper(n, i + 1);
