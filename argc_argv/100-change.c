@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int i, j, k,  min = 0;
+	int i, j, k;
 
 	if (argc != 1)
 	{
@@ -36,5 +36,5 @@ int main(int argc, char **argv)
                 else
 			printf("%d\n", k);
 	}
-	return (0)
+	return (0);
 }
