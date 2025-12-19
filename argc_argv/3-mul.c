@@ -8,9 +8,9 @@
  * Return: 0 if successful
  */
 
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
-	if (isdigit(argv(1)) && isdigit(argv[2]))
+	if (isdigit(argv[1]) && isdigit(argv[2]))
 	{
 		printf("%d\n", argv[1] * argv[2]);
 	}
