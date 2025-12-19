@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 {
 	int i, j, count = 0;
 
-	if (argv[1] == '\0')
+	if (argv + 1 == '\0')
 		puts("0\n");
 	for (i = 1; i < argc; i++)
 	{
