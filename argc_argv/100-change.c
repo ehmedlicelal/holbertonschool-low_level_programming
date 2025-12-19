@@ -25,16 +25,16 @@ int main(int argc, char **argv)
 				puts("0");
 		}
 		k = atoi(argv[i]);
-		if (k % 25 == 0)
-			printf("%d\n", k / 25);
-		else if (k % 10 == 0)
-			printf("%d\n", k / 10);
-		else if (k % 5 == 0)
-			printf("%d\n", k / 5);
-		else if (k % 2 == 0)
-                        printf("%d\n", k / 2);
-                else
-			printf("%d\n", k);
 	}
+	if (k % 25 == 0)
+		printf("%d\n", k / 25);
+	else if (k % 10 == 0)
+		printf("%d\n", k / 10);
+	else if (k % 5 == 0)
+		printf("%d\n", k / 5);
+	else if (k % 2 == 0)
+	  	printf("%d\n", k / 2);
+	else
+		printf("%d\n", k);
 	return (0);
 }
