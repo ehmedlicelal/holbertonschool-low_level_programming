@@ -13,18 +13,20 @@ int main(int argc, char **argv)
 {
 	int i, j, count = 0;
 
-	if (argv + 1 == '\0')
+	if (argc == 1)
 		puts("0\n");
 	for (i = 1; i < argc; i++)
 	{
 		j = atoi(argv[i]);
-		if (!isdigit(j))
+		if (isdigit(j))
+		{
+			count += j;
+		}
+		else
 		{
 			puts("Error\n");
 			return (1);
 		}
-		else
-			count += j;
 	}
 	printf("%d\n", count);
 	return (0);
