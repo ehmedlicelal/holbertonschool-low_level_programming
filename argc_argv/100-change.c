@@ -10,52 +10,35 @@
 
 int main(int argc, char **argv)
 {
-	int i, j, k, add, change = 0;
+	int cents, change;
 
 	if (argc != 2)
 	{
-		puts("Error");
-		return (1);
+		putchar("Error");
+		return (1)
 	}
-	for (i = 1; i < argc; i++)
+
+	cents = atoi(argv[1]);
+	if (cents < 0)
 	{
-		for (j = 0; argv[i][j]; j++)
-		{
-			if (argv[i][j] == '-')
-				puts("0");
-		}
-		k = atoi(argv[i]);
-		if (k >= 25)
-		{
-			add = k / 25;
-			k = k - add * k;
-			change += add;
-		}
-		else if (k >= 10)
-		{
-			add = k / 10;
-			k = k - add * k;
-			change += add;
-		}
-		else if(k >= 5)
-		{
-			add = k / 5;
-			k = k - add * k;
-			change += add;
-		}
-		else if (k >= 2)
-		{
-			add = k / 2;
-			k = k - add * k;
-			change += add;
-		}
-		else if(k >= 1)
-		{
-			add = k / 1;
-			k = k - add * k;
-			change += add;
-		}
+		puts("0");
+		return (0);
 	}
+
+	change += cents / 25;
+	cents %= 25;
+
+	change += cents / 10;
+	cents %= 10;
+
+	change += cents / 5;
+	cents %= 5;
+
+	change += cents / 2;
+	cents %= 2;
+
+	change += cents;
+
 	printf("%d\n", change);
 	return (0);
 }
