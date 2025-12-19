@@ -9,6 +9,6 @@
 
 int main(int argc, char **argv)
 {
-	pirntf("%d\n",argc);
+	printf("%d\n",argc);
 	return (0);
 }
