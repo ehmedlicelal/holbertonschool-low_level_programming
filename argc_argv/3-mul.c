@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * main - entry point
@@ -10,9 +11,9 @@
 
 int main(int argc __attribute__((unused)), char **argv)
 {
-	if (isdigit(argv[1]) && isdigit(argv[2]))
+	if (isdigit(atoi(argv[1])) && isdigit(atoi(argv[2])))
 	{
-		printf("%d\n", argv[1] * argv[2]);
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
 	{
