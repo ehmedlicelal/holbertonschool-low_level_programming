@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	if (argv[1].isdigit() && argv[2].isdigit())
+	if (isdigit(argv(1)) && isdigit(argv[2]))
 	{
 		printf("%d\n", argv[1] * argv[2]);
 	}
