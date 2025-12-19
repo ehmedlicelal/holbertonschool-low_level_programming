@@ -11,9 +11,12 @@
 
 int main(int argc __attribute__((unused)), char **argv)
 {
-	if (isdigit(atoi(argv[1])) && isdigit(atoi(argv[2])))
+	int arg1 = atoi(argv[1]);
+	int arg2 = atoi(argv[2]);
+
+	if (isdigit(arg1) && isdigit(arg2))
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		printf("%d\n", arg1 * arg2);
 	}
 	else
 	{
