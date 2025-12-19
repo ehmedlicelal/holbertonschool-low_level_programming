@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-		count += atoi(arg[i]);
+		count += atoi(argv[i]);
 	}
 	printf("%d\n", count);
 	return (0);
