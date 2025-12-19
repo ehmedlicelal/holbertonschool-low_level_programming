@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	if (argc != 2)
 	{
-		putchar("Error");
+		puts("Error");
 		return (1)
 	}
 
