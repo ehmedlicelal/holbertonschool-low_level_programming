@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -17,13 +16,13 @@ int main(int argc, char **argv)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (arg[i][j] < '0' || arg[i][j] > '9')
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				puts("Error\n");
 				return (1);
 			}
 		}
-		count += arg[i];
+		count += atoi(arg[i]);
 	}
 	printf("%d\n", count);
 	return (0);
