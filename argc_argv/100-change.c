@@ -31,25 +31,25 @@ int main(int argc, char **argv)
 			k = k - add * k;
 			change += add;
 		}
-		if (k >= 10)
+		else if (k >= 10)
 		{
 			add = k / 10;
 			k = k - add * k;
 			change += add;
 		}
-		if(k >= 5)
+		else if(k >= 5)
 		{
 			add = k / 5;
 			k = k - add * k;
 			change += add;
 		}
-		if (k >= 2)
+		else if (k >= 2)
 		{
 			add = k / 2;
 			k = k - add * k;
 			change += add;
 		}
-		if(k >= 1)
+		else if(k >= 1)
 		{
 			add = k / 1;
 			k = k - add * k;
