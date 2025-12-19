@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int cents, change;
+	int cents, change = 0;
 
 	if (argc != 2)
 	{
