@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	int i, j, k;
+	int i, j, k, add, change = 0;
 
 	if (argc != 2)
 	{
@@ -25,16 +25,37 @@ int main(int argc, char **argv)
 				puts("0");
 		}
 		k = atoi(argv[i]);
+		if (k >= 25)
+		{
+			add = k / 25;
+			k = k - add * k;
+			change += add;
+		}
+		if (k >= 10)
+		{
+			add = k / 10;
+			k = k - add * k;
+			change += add;
+		}
+		if(k >= 5)
+		{
+			add = k / 5;
+			k = k - add * k;
+			change += add;
+		}
+		if (k >= 2)
+		{
+			add = k / 2;
+			k = k - add * k;
+			change += add;
+		}
+		if(k >= 1)
+		{
+			add = k / 1;
+			k = k - add * k;
+			change += add;
+		}
 	}
-	if (k % 25 == 0)
-		printf("%d\n", k / 25);
-	else if (k % 10 == 0)
-		printf("%d\n", k / 10);
-	else if (k % 5 == 0)
-		printf("%d\n", k / 5);
-	else if (k % 2 == 0)
-	  	printf("%d\n", k / 2);
-	else
-		printf("%d\n", k);
+	printf("%d\n", change);
 	return (0);
 }
