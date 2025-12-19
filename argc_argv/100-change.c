@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 	int i, j, k;
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		puts("Error");
 		return (1);
