@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (arg[i][j] == '-')
+			if (argv[i][j] == '-')
 				puts('0');
 		}
 		k = atoi(argv[i]);
