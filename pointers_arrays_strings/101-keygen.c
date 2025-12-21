@@ -15,11 +15,11 @@ int main(void)
 
 	srand(time(NULL));
 
-	while (sum < 2772)
+	while (sum <= 2772 - 33)
 	{
-		c = rand() % 94 + 33; /* ASCII 33 to 126 */
+		c = rand() % 94 + 33;
 
-		if (sum + c > 2772)
+		if (sum + c > 2772 - 33)
 			break;
 
 		sum += c;
