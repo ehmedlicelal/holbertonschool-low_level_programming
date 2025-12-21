@@ -10,17 +10,23 @@
 
 int main(void)
 {
-	int unlock, passwd;
+	int sum = 0;
+	int c;
 
 	srand(time(NULL));
-	unlock = 2772;
-	while (unlock >= 127)
+
+	while (sum < 2772)
 	{
-		passwd = (rand() % 126) + 1;
-		printf("%c", passwd);
-		unlock -= passwd;
+		c = rand() % 94 + 33; /* ASCII 33 to 126 */
+
+		if (sum + c > 2772)
+			break;
+
+		sum += c;
+		putchar(c);
 	}
 
-	printf("%c", unlock);
+	putchar(2772 - sum);
+
 	return (0);
 }
