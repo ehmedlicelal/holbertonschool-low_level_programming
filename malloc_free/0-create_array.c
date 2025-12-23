@@ -4,8 +4,19 @@
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
+	unsigned int i;
 
-	arr = malloc(sizeof(size));
-	arr[0] = c;
+	i = 0;
+	if (i != 0)
+		arr = malloc(size * sizeof(c));
+	else
+		return (NULL);
+	if (arr == NULL)
+		return (NULL);
+	while (i < size)
+	{
+		arr[i] = c;
+		i++;
+	}
 	return (arr);
 }
