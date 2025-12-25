@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
+/**
+ * free_grid - frees allocated grid
+ * @grid: grid
+ * @height: height of grid
+ */
+
 void free_grid(int **grid, int height)
 {
 	int i = 0;
