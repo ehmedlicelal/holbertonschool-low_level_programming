@@ -12,7 +12,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *arr_concated;
+	char *arr;
 	int len1 = 0, index = 0;
 
 	if (s1 == NULL)
