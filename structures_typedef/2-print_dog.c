@@ -1,6 +1,11 @@
 #include "dog.h"
 #include <stdlib.h>
 
+/**
+ * print_dog - prints a struct dog
+ * @d: pointer to struct dog
+ */
+
 void print_dog(struct dog *d)
 {
 	char null_element[] = "(nil)";
@@ -11,13 +16,13 @@ void print_dog(struct dog *d)
 			printf("Name: %s\n", d->name);
 		else
 			printf("Name: %s\n", null_element);
-		if (d->name != NULL)
-			printf("Name: %s\n", d->name);
+		if (d->age != NULL)
+			printf("Age: %f\n", d->age);
 		else
-			printf("Name: %s\n", null_element);
-		if (d->name != NULL)
-			printf("Name: %s\n", d->name);
+			printf("Age: %s\n", null_element);
+		if (d->owner != NULL)
+			printf("Owner: %s\n", d->owner);
    		else
-   			printf("Name: %s\n", null_element);
+   			printf("Owner: %s\n", null_element);
 	}
 }
