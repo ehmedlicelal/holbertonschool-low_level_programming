@@ -24,6 +24,23 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
+ * _strlen - length of string
+ * @s: string
+ *
+ * Return: length of string
+ */
+
+int _strlen(char *s)
+{
+	int len = 0;
+	
+	while (s[len])
+		len++;
+	len--;
+	return (len);
+}
+
+/**
  * new_dog - new instance of a dog
  * @name: name of the new dog
  * @age: age of the new dog
@@ -37,8 +54,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *temp_name, *temp_owner;
 	dog_t *new_puppy;
 
-	temp_name = malloc(sizeof(name) * (strlen(name) + 1));
-	temp_owner = malloc(sizeof(owner) * (strlen(owner) + 1));
+	temp_name = malloc(sizeof(name) * (_strlen(name) + 1));
+	temp_owner = malloc(sizeof(owner) * (_strlen(owner) + 1));
 	new_puppy = malloc(sizeof(dog_t));
 
 	if (temp_name && temp_owner && new_puppy)
