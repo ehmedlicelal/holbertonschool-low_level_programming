@@ -6,6 +6,8 @@
  * @array: array of integers
  * @size: size of array
  * @cmp: pointer to function, compares integers. Has an int arg
+ *
+ * Return: index of searched integer, if not found returns -1
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
