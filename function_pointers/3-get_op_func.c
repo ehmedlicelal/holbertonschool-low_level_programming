@@ -1,6 +1,14 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
+/**
+ * get_op_func - convert given string to matching operator
+ * @s: string
+ *
+ * Return: returns operator function
+ */
+
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
