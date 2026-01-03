@@ -8,7 +8,7 @@
  * Return: 0 if successful
  */
 
-int main(argc, **argv)
+int main(int argc, char **argv)
 {
 	int a, b;
 	char *op;
