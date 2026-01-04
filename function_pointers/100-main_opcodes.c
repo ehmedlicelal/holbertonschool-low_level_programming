@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "function_pointers.h"
 
 /**
  * main - entry point
@@ -31,6 +30,6 @@ int main(int argc, char **argv)
 	
 	for (i = 0; i < bytes; i++)
 		printf("%02hhx ", append[i]);
-	_putchar("\n");
+	printf("\n");
 	return (0);
 }
