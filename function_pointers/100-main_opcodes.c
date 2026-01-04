@@ -28,8 +28,8 @@ int main(int argc, char **argv)
 	append = (char *)&main;
 	bytes = atoi(argv[1]);
 	
-	for (i = 0; i < bytes; i++)
+	for (i = 0; i < bytes - 1; i++)
 		printf("%02hhx ", append[i]);
-	printf("\n");
+	printf("%02hhx\n", append[i]);
 	return (0);
 }
