@@ -22,7 +22,7 @@ void print_string(va_list args)
 {
 	char *string;
 
-	string = va_arg(args, char *)
+	string = va_arg(args, char *);
 	if (string == NULL)
 		string = "(nil)";
 	printf("%s", string);
@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 		{"i", print_int},
 		{"f", print_float},
 		{"s", print_string}
-	}
+	};
 	separator = "";
 	va_start(format, args);
 	while (format != NULL && format[i] != '\0')
@@ -82,4 +82,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
+	va_end(args);
 }
