@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n - 1 && separator != NULL; i++)
 	{
 		string = va_arg(strings, char *);
-		if (word != NULL)
+		if (string != NULL)
 			printf("%s%s", string, separator);
 		else
 			printf("(nil)\n");
