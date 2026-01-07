@@ -10,7 +10,7 @@
 
 void print_char(va_list args)
 {
-	printf("%c", va_arg(args, char));
+	printf("%c", va_arg(args, int));
 }
 
 /**
@@ -45,7 +45,7 @@ void print_int(va_list args)
 
 void print_float(va_list args)
 {
-	printf("%f", va_arg(args, float));
+	printf("%f", va_arg(args, double));
 }
 
 /**
@@ -71,10 +71,10 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (print_form[j].c == format[i])
+			if (*print_form[j].c == format[i])
 			{
 				printf("%s", separator);
-				print_form[j].f(args, sep);
+				print_form[j].f(args, separator);
 				separator = ", ";
 			}
 			j++;
