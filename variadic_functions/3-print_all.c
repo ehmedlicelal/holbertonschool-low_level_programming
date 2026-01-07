@@ -65,7 +65,7 @@ void print_all(const char * const format, ...)
 		{"s", print_string}
 	};
 	separator = "";
-	va_start(format, args);
+	va_start(args, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
