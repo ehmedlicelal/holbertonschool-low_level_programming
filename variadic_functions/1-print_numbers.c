@@ -2,6 +2,13 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+ * print_numbers - prints numbers with splitted by separator
+ * @separator: separator between integers
+ * @n: number of integers
+ */
+
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
