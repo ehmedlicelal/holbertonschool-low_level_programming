@@ -18,6 +18,7 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
+#include <stdlib.h>
 size_t print_list(const list_t *h);
 
 #endif
