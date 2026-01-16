@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * add_node - adds new node to the head of the list
+ * @head: head of list
+ * @str: element must be added to the head of the list
+ * Return: pointer to new node
+ */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
