@@ -9,8 +9,6 @@
 
 void free_list(list_t *head)
 {
-	int i = 0;
-
 	while (head != NULL)
 	{
 		free(head);
