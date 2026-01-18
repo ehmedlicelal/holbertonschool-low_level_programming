@@ -1,6 +1,14 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * insert_dnodeint_at_index - adds node to the spesific index
+ * @h: pointer to pointer to the head of the list
+ * @idx: wanted index
+ * @n: data of the new node
+ * Return: new node if successful
+ */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *tmp, *new;
@@ -13,7 +21,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 	new->n = n, new->prev = new->next = NULL;
-	
+
 	if (idx == 0)
 	{
 		if (*h)
