@@ -19,10 +19,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (*h)
 		{
 			new->next = *h;
-			(*h)->prev = new, *h = new;
+			(*h)->prev = new;
 		}
-		else
-			*h = new;
+		*h = new;
+		return (new);
 	}
 	counter = 0;
 	tmp = *h;
