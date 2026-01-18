@@ -17,13 +17,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == 0)
 	{
 		tmp = *head, *head = (*head)->next;
-		if(*head)
-		{
+		if (tmp == NULL)
+			return (-1);
+		if (*head)
 			(*head)->prev = NULL;
-			free(tmp), tmp = NULL;
-			return (1);
-		}
-		return (-1);
+		free(tmp), tmp = NULL;
+		return (1);
 	}
 	i = 1, tmp = (*head)->next;
 	if (tmp)
