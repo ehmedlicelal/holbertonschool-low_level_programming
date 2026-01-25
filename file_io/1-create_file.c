@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
 * create_file - creates a file with read&writre permission and writes to it
