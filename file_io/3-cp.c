@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #define BUFRSIZE 1204
 #define ER STDERR_FILENO
 
@@ -8,6 +8,7 @@
 * @fil2: file to copy to
 * Return: nothing, or exit on failure
 **/
+
 void copy_file(const char *file1, char *fil2)
 {
 	ssize_t count, count_out;
